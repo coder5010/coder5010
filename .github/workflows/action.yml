@@ -1,19 +1,22 @@
-  name: README Info Update
-  # You may pin to the exact commit or the version.
-  # uses: th3c0d3br34ker/github-readme-info@4af1712243963b832725b2291ddc9710be89f2b4
-  uses: th3c0d3br34ker/github-readme-info@1.0.2
-  with:
-    # GitHub access token with Repo scope
-    GH_TOKEN: ${{ secrets.GH_TOKEN }}
-    # Your Local TimeZone
-    TIMEZONE: "Us/central"
-    # Shows the number of commit graph in the dev metrics.
-    SHOW_DAILY_COMMIT: "True" # optional, default is True
-    # Shows day of week you are most productive.
-    SHOW_WEEKLY_COMMIT: "True"
-    # Show the Total Lines Of Code written Badge till date.
-    SHOW_LINES_OF_CODE: # optional, default is True
-    # Shows the Profile Views.
-    SHOW_PROFILE_VIEWS: "True" # optional, default is True
-    # Shows the most used language.
-    SHOW_LANGUAGE: "True"
+name: README Info Update
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    name: GitHub README Generator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: th3c0d3br34ker/github-readme-info@master
+        with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          TIMEZONE: "Us/Central"
+          SHOW_LINES_OF_CODE: "True"
+          SHOW_PROFILE_VIEWS: "True"
+          SHOW_DAILY_COMMIT: "True"
+          SHOW_WEEKLY_COMMIT: "True"
+          SHOW_LANGUAGE: "True"
+          SHOW_TOTAL_CONTRIBUTIONS: "True"
