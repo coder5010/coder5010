@@ -1,4 +1,4 @@
-- name: GitHub README Generator
+  name: README Info Update
   # You may pin to the exact commit or the version.
   # uses: th3c0d3br34ker/github-readme-info@4af1712243963b832725b2291ddc9710be89f2b4
   uses: th3c0d3br34ker/github-readme-info@1.0.2
