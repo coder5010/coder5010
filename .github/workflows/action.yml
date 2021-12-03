@@ -4,16 +4,16 @@
   uses: th3c0d3br34ker/github-readme-info@1.0.2
   with:
     # GitHub access token with Repo scope
-    GH_TOKEN: # default is ${{ github.token }}
+    GH_TOKEN: ${{ secrets.GH_TOKEN }}
     # Your Local TimeZone
-    TIMEZONE: 
+    TIMEZONE: "Us/central"
     # Shows the number of commit graph in the dev metrics.
-    SHOW_DAILY_COMMIT: # optional, default is True
+    SHOW_DAILY_COMMIT: "True" # optional, default is True
     # Shows day of week you are most productive.
-    SHOW_WEEKLY_COMMIT: # optional, default is True
+    SHOW_WEEKLY_COMMIT: "True"# optional, default is True
     # Show the Total Lines Of Code written Badge till date.
     SHOW_LINES_OF_CODE: # optional, default is True
     # Shows the Profile Views.
-    SHOW_PROFILE_VIEWS: # optional, default is True
+    SHOW_PROFILE_VIEWS: "True" # optional, default is True
     # Shows the most used language.
-    SHOW_LANGUAGE: # optional, default is True
+    SHOW_LANGUAGE: "True"# optional, default is True
