@@ -10,10 +10,10 @@
     # Shows the number of commit graph in the dev metrics.
     SHOW_DAILY_COMMIT: "True" # optional, default is True
     # Shows day of week you are most productive.
-    SHOW_WEEKLY_COMMIT: "True"# optional, default is True
+    SHOW_WEEKLY_COMMIT: "True"
     # Show the Total Lines Of Code written Badge till date.
     SHOW_LINES_OF_CODE: # optional, default is True
     # Shows the Profile Views.
     SHOW_PROFILE_VIEWS: "True" # optional, default is True
     # Shows the most used language.
-    SHOW_LANGUAGE: "True"# optional, default is True
+    SHOW_LANGUAGE: "True"
