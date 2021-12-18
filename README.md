@@ -1,5 +1,5 @@
 <!--START_SECTION:waka-->
-![Profile Views](http://img.shields.io/badge/Profile%20Views-287-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-152-blue)
 
 **🐱 My GitHub Data** 
 
@@ -66,5 +66,5 @@ PHP                      1 repo              █░░░░░░░░░░�
 
 
 
- Last Updated on 17/12/2021
+ Last Updated on 18/12/2021
 <!--END_SECTION:waka-->
